@@ -1,0 +1,21 @@
+<h1>Edit Patient</h1>
+
+<%= form_with(model: @patient, url: receptionists_patient_path(@patient), method: :patch) do |form| %>
+  <div>
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+  <div>
+    <%= form.label :age %>
+    <%= form.number_field :age %>
+  </div>
+  <div>
+    <%= form.label :contact_info %>
+    <%= form.text_field :contact_info %>
+  </div>
+  <div>
+    <%= form.submit "Update Patient" %>
+  </div>
+<% end %>
+
+

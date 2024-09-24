@@ -1,0 +1,21 @@
+<h1>Registered Patients</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Contact</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @patients.each do |patient| %>
+      <tr>
+        <td><%= patient.name %></td>
+        <td><%= patient.age %></td>
+        <td><%= patient.contact_info %></td>
+        <td><%= patient.created_at.strftime('%B %d, %Y') %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

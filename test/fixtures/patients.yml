@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  age: 1
+  contact_info: MyString
+  registered_at: 2024-09-23
+
+two:
+  name: MyString
+  age: 1
+  contact_info: MyString
+  registered_at: 2024-09-23

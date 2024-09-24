@@ -1,0 +1,9 @@
+<h1>Patient Details</h1>
+
+<p><strong>Name:</strong> <%= @patient.name %></p>
+<p><strong>Age:</strong> <%= @patient.age %></p>
+<p><strong>Contact:</strong> <%= @patient.contact_info %></p>
+
+<%= link_to 'Edit', edit_receptionists_patient_path(@patient) %> |
+<%= link_to 'Back', request.referer || receptionists_patients_path %>
+
